@@ -16,7 +16,7 @@ const members: Member[] = [
   {
     name: "Gab Earnest Obregon",
     role: "Team Leader",
-    email: "gab@dlsud.edu.ph",
+    email: "ogm1783@dlsud.edu.ph",
     github: "gabzy-works",
     linkedin: "gab",
     contributions: [
@@ -31,7 +31,7 @@ const members: Member[] = [
     name: "Armon Sta Ana",
     role: "Developer",
     email: "CCE1292@dlsud.edu.ph",
-    github: "Amron",
+    github: "Monmon891Awesome",
     linkedin: "name",
     contributions: [
       "Frontend development",
@@ -59,9 +59,9 @@ const members: Member[] = [
   {
     name: "Aaron Angeles",
     role: "Developer",
-    email: "names@example.com",
-    github: "name",
-    linkedin: "name",
+    email: "aav1391@dlsud.edu.ph",
+    github: "AaronVAngeles",
+    linkedin: "Aaron Carl Angeles",
     contributions: [
       "State management",
       "Performance optimization",
