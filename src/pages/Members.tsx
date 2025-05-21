@@ -30,7 +30,7 @@ const members: Member[] = [
   {
     name: "Armon Sta Ana",
     role: "Developer",
-    email: "CCE1292@dlsud.edu.ph",
+    email: "sat2206@dlsud.edu.ph",
     github: "Monmon891Awesome",
     linkedin: "name",
     contributions: [
