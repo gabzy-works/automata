@@ -45,8 +45,8 @@ const members: Member[] = [
   {
     name: "Neil Anthony Delos Reyes",
     role: "Developer",
-    email: "nname@example.com",
-    github: "name",
+    email: "dnx1307@dlsud.edu.ph",
+    github: "neilanthonydelosreyes@gmail.com",
     linkedin: "name",
     contributions: [
       "Backend logic",
