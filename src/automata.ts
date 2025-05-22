@@ -153,44 +153,46 @@ export const CFG_1: CFG = {
     'S → A B C D E F G H I',
     'A → aa | bb',
     'B → aba | bab | bbb',
-    'C → "a" C | "b" C | λ',
-    'D → "aa" | "bb"',
+    'C → a C | b C | λ',
+    'D → aa | bb',
     'E → D E | λ',
-    'F → "a" R "a" R "a"',
-    'R → "b" R | λ',
+    'F → a R a R a',
+    'R → b R | λ',
     'G → F G | λ',
-    'H → "bbb" | "aaa"',
-    'I → "a" I | "b" I | λ'
+    'H → bbb | aaa',
+    'I → a I | b I | λ'
   ]
 };
+
 export const CFG_2: CFG = {
   start_symbol: 'S',
   productions: [
     'S → A B C D E F G H I',
     // segment 1: 1*0 1*0 1*
-    'A → X "0" Y "0" Z',
-    'X → "1" X | λ',
-    'Y → "1" Y | λ',
-    'Z → "1" Z | λ',
+    'A → X 0 Y 0 Z',
+    'X → 1 X | λ',
+    'Y → 1 Y | λ',
+    'Z → 1 Z | λ',
     // segment 2: (11+00)
-    'B → "11" | "00"',
+    'B → 11 | 00',
     // segment 3: (10+01)*
-    'C → "10" C | "01" C | λ',
+    'C → 10 C | 01 C | λ',
     // segment 4: (1+0)
-    'D → "1" | "0"',
+    'D → 1 | 0',
     // segment 5: (11+00)
-    'E → "11" | "00"',
+    'E → 11 | 00',
     // segment 6: (1+0+11+00+101+111+000)
-    'F → "1" | "0" | "11" | "00" | "101" | "111" | "000"',
+    'F → 1 | 0 | 11 | 00 | 101 | 111 | 000',
     // segment 7: (11+00)*
-    'G → "11" G | "00" G | λ',
+    'G → 11 G | 00 G | λ',
     // segment 8: 1 0* 1 0* 1
-    'H → "1" O "1" O "1"',
-    'O → "0" O | λ',
+    'H → 1 O 1 O 1',
+    'O → 0 O | λ',
     // segment 9: (11+00)*
-    'I → "11" I | "00" I | λ'
+    'I → 11 I | 00 I | λ'
   ]
 };
+
 
 export const PDA_1: PDA = {
   states: ["Start", "Read1", "Read2", "Read3", "Read4", "Read5", "Read6", "Read7",

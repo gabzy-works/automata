@@ -38,6 +38,9 @@ const Simulation: React.FC = () => {
     return null;
   }
   
+  // Check if we're at the last step of the simulation
+  const isLastStep = simulationState.currentStep === simulationState.steps.length - 1;
+  
   return (
     <div className="bg-white p-6 shadow-md rounded-lg mt-6 border border-gray-200 animate-fade-in">
       <h2 className="text-xl font-semibold mb-4 text-gray-800 flex items-center justify-between">
@@ -106,7 +109,10 @@ const Simulation: React.FC = () => {
           <div className="mt-4">
             <div className="font-mono p-3 bg-white rounded border border-gray-200 text-center">
               {selectedType !== 'CFG' ? (
-                <>Current State: <span className="font-bold text-indigo-600">
+                <>Current State: <span className={`font-bold ${
+                  // Apply specific color to the last step
+                  isLastStep ? (simulationState.result ? 'text-green-600' : 'text-red-600') : 'text-indigo-600'
+                }`}>
                   {simulationState.steps[simulationState.currentStep]}
                 </span></>
               ) : (
