@@ -152,7 +152,7 @@ export const CFG_1: CFG = {
   productions: [
     'S → A B C D E F G H I',
     'A → aa | bb',
-    'B → "aba" | "bab" | "bbb"',
+    'B → aba | bab | bbb',
     'C → "a" C | "b" C | λ',
     'D → "aa" | "bb"',
     'E → D E | λ',
